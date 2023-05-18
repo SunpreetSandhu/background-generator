@@ -4,12 +4,15 @@ var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 console.log(body);
 
-color1.addEventListener("input", function () {
+function setGradient() {
   body.style.background =
     "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+}
+
+color1.addEventListener("input", function () {
+  setGradient();
 });
 
 color2.addEventListener("input", function () {
-  body.style.background =
-    "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+  setGradient();
 });
