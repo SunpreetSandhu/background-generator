@@ -2,7 +2,7 @@ var css = document.querySelector("h3");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
-console.log(body);
+body.style.background = "linear-gradient(to right, #00ff00 , #ff0000)";
 
 function setGradient() {
   body.style.background =
